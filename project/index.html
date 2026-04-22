@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <div class="card">
+            <p class="eyebrow">Student Portal</p>
+            <h2>Student Registration</h2>
+            <p class="subtitle">Enter the details below to save the student record in MySQL.</p>
+
+            <form action="SaveStudentServlet" method="post" class="student-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter student name" required>
+
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter phone number" required>
+
+                <label for="year">Year</label>
+                <input type="text" id="year" name="year" placeholder="First / Second / Third" required>
+
+                <button type="submit">Save Student</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
